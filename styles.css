@@ -20,6 +20,8 @@ header, footer {
 main{
     padding: 20px;
     flex-grow: 1;
+    
+  
 }
 .container { 
      display: flex;
@@ -39,20 +41,20 @@ img {
     border: solid 3px black;
     box-shadow: 0 3px 4px rgb(0, 0, 0);
     border-radius: 50%;
-    transition: border 5s ease, box-shadow 5s ease, borde-radius 2s ease;
+    transition: border 2s ease, box-shadow 2s ease, borde-radius 2s ease;
 }
 
 img:hover {
      box-shadow: 0px 1px 1px;
-     border-radius: 2px 10px 3px 2px;
+     border-radius: 0px 10px 0px 0px;
      border: solid white;
 }
 .git {
-    height: 40px;
+    height: 35px;
     
 }
 .in {
-    height: 40px;
+    height: 35px;
 }
 header {
    top: 0;
@@ -70,6 +72,12 @@ div {
     display: flex;
     justify-content: right;
     margin: 10px;
+    transition: transform 2s ease;
+}
+nav:hover{
+   transform: scale(1.1);
+   
+
 }
 a {
     background-color: rgb(238, 26, 26);
@@ -172,6 +180,7 @@ a:hover{
     border-radius: 10px 10px 10px 10px;
     margin: 10px;
     padding: 20px;
+    box-shadow: 0 10px 10px;
     transition: transform 1s ease;
 }
 
@@ -210,3 +219,50 @@ a:hover{
   transform: translateY(-10px);
   transform: translateX(-200px);
 }
+
+.circle8 {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent; 
+    border-right: 50px solid transparent; 
+    border-top: 100px solid red;     
+    transition: transform 2s ease;
+}
+
+.circle8:hover {
+transform: rotate(100deg);
+  
+}
+
+.circle9 {
+    background-color: rgba(37, 118, 224, 0.6);
+    border: solid 2px rgb(0, 0, 0);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 10px;
+    padding: 20px;
+    transition: transform 2s ease;
+}
+
+.circle9:hover {
+ transform: rotate3d(2, 2, 2, 100deg);
+}
+
+.circle10 {
+    background-color: rgba(37, 118, 224, 0.6);
+    border: solid 2px rgb(0, 0, 0);
+    width: 70px;
+    height: 70px;
+    border-radius: 35px 35px 35px 35px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 10px black;
+    transition: transform 2s ease;
+}
+
+.circle10:hover {
+transform: translate3d(50px, -20px, 100px);
+}
+
+
